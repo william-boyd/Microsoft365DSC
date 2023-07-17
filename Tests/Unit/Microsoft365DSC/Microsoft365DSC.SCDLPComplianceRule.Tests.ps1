@@ -71,6 +71,7 @@ Describe -Name $Global:DscHelper.DescribeHeader -Fixture {
                         } -ClientOnly)
 
                     BlockAccess                         = $False
+                    AccessScope                         = 'NotInOrganization'
                     Name                                = 'TestPolicy'
                     Credential                          = $Credential
                 }
@@ -128,6 +129,7 @@ Describe -Name $Global:DscHelper.DescribeHeader -Fixture {
                         )
                     } -ClientOnly
                     BlockAccess                         = $False
+                    AccessScope                         = 'NotInOrganization'
                     Name                                = 'TestPolicy'
                     Credential                          = $Credential
                 }
@@ -167,6 +169,7 @@ Describe -Name $Global:DscHelper.DescribeHeader -Fixture {
                                 } -ClientOnly)
                         } -ClientOnly)
                     BlockAccess                         = $False
+                    AccessScope                         = 'NotInOrganization'
                     Name                                = 'TestPolicy'
                     Credential                          = $Credential
                 }
@@ -178,6 +181,7 @@ Describe -Name $Global:DscHelper.DescribeHeader -Fixture {
                         ParentPolicyName                    = 'MyParentPolicy'
                         ContentContainsSensitiveInformation = @(@{maxconfidence = '100'; id = 'cb353f78-2b72-4c3c-8827-92ebe4f69fdf'; minconfidence = '75'; rulePackId = '00000000-0000-0000-0000-000000000000'; classifiertype = 'Content'; name = 'ABA Routing Number'; mincount = '1'; maxcount = '-1'; })
                         BlockAccess                         = $False
+                        AccessScope                         = 'NotInOrganization'
                     }
                 }
             }
@@ -202,6 +206,7 @@ Describe -Name $Global:DscHelper.DescribeHeader -Fixture {
                     Policy      = 'MyParentPolicy'
                     Comment     = ''
                     BlockAccess = $False
+                    AccessScope = 'NotInOrganization'
                     Name        = 'TestPolicy'
                     Credential  = $Credential
                 }
@@ -213,6 +218,7 @@ Describe -Name $Global:DscHelper.DescribeHeader -Fixture {
                         ContentContainsSensitiveInformation = @(@{maxconfidence = '100'; id = 'eefbb00e-8282-433c-8620-8f1da3bffdb2'; minconfidence = '75'; rulePackId = '00000000-0000-0000-0000-000000000000'; classifiertype = 'Content'; name = 'Argentina National Identity (DNI) Number'; mincount = '1'; maxcount = '9'; })
                         Comment                             = ''
                         BlockAccess                         = $False
+                        AccessScope                         = 'NotInOrganization'
                     }
                 }
             }
@@ -245,6 +251,7 @@ Describe -Name $Global:DscHelper.DescribeHeader -Fixture {
                         ContentContainsSensitiveInformation = @(@{maxconfidence = '100'; id = 'eefbb00e-8282-433c-8620-8f1da3bffdb2'; minconfidence = '75'; rulePackId = '00000000-0000-0000-0000-000000000000'; classifiertype = 'Content'; name = 'Argentina National Identity (DNI) Number'; mincount = '1'; maxcount = '9'; })
                         Comment                             = ''
                         BlockAccess                         = $False
+                        AccessScope                         = 'NotInOrganization'
                     }
                 }
             }
